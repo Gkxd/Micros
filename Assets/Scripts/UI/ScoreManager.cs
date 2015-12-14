@@ -20,7 +20,7 @@ public class ScoreManager : MonoBehaviour {
     }
 
     void Update() {
-        if (TrackColonySize.colonySize > 0) {
+        if (TrackColonySize.colonySize > 0 && !ShowHelp.helpActive) {
             timeScore += Time.deltaTime;
         }
 
